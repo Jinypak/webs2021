@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 선언적 함수(기본 함수)
+        function func() {
+            document.write("함수 실행 <br>");
+        }
+        func();
+        func();
+
+        // 익명 함수(변수에 함수를 저장)
+
+        var func2 = function() {
+            document.write("함수2 실행 <br>");
+        }
+        func2();
+        func2();
+
+        // 매개변수가 있는 함수
+        function func3(name) {
+            document.write(name, );
+        }
+        func3("함수3 실행 <br>");
+        func3("함수3 실행 <br>");
+
+        // 리턴값(결과)이 있는 함수
+        function func4() {
+            const str = "함수4 실행 <br>";
+            return str;
+        }
+        document.write(func4());
+        document.write(func4());
+    </script>
+</body>
+
+</html>

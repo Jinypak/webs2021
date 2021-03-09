@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 선언적 함수(기본 함수)
+        function func1() {
+            document.write("함수 실행<br>");
+        }
+        func1();
+
+        // 선언적 함수(화살표 함수)
+        func2 = () => {
+            document.write("함수 실행2<br>");
+        }
+        func2();
+
+        // 선언적 함수 한줄(중괄호 생략)
+        func3 = () => document.write("함수 실행3<br>");
+        func3();
+
+        // 익명 함수(기본 함수)
+        const func4 = function() {
+            document.write("함수 실행4<br>");
+        }
+        func4();
+
+        // 익명 함수(화살표 함수)
+        const func5 = () => {
+            document.write("함수 실행5<br>");
+        }
+        func5();
+
+        // 익명 함수(중괄호 생략)
+        func6 = () => document.write("함수 실행6<br>");
+        func6();
+
+        // 리턴 값이 있는 함수(기본 함수)
+        function func7() {
+            const str = "함수 실행7<br>";
+            return str;
+        }
+        document.write(func7());
+
+        // 리턴 값이 있는 함수(화살표 함수)
+        func8 = () => {
+            const str = "함수 실행8<br>";
+            return str;
+        }
+        document.write(func8());
+
+        // 매개 변수가 있는 함수(기본 함수)
+        function func9(name) {
+            document.write(name);
+        }
+        func9("함수 실행9<br>");
+
+        // 매개 변수가 있는 함수(화살표 함수)
+        func10 = (name) => {
+            document.write(name);
+        }
+        func10("함수 실행10<br>");
+
+        // 매개 변수가 있는 함수 (익명 함수)
+        const func11 = (name) => {
+            document.write(name);
+        }
+        func11("함수 실행11<br>");
+
+        // 매개 변수가 있는 함수(중괄호 생략)
+        func12 = (name) => document.write(name);
+        func12("함수 실행12<br>");
+
+        // 매개 변수가 있는 함수 (소괄호 생략)
+        func13 = name => document.write(name);
+        func13("함수 실행13<br>");
+    </script>
+</body>
+
+</html>
